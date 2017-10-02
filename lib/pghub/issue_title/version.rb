@@ -1,5 +1,5 @@
 module PgHub
-  module PostTitle
+  module IssueTitle
     VERSION = "0.1.0"
   end
 end
