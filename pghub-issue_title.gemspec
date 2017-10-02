@@ -1,17 +1,17 @@
 # coding: utf-8
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "pghub/post_title/version"
+require "pghub/issue_title/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "pghub-post_title"
-  spec.version       = PgHub::PostTitle::VERSION
+  spec.name          = "pghub-issue_title"
+  spec.version       = PgHub::IssueTitle::VERSION
   spec.authors       = ["Ebinuma Kenichi"]
   spec.email         = ["ktennis.mqekr12@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Post issue title to your github}
+  spec.description   = %q{This gem posts issue title when you write "ref issue's URL" to your github conversation}
+  spec.homepage      = "https://github.com/ebkn12"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
