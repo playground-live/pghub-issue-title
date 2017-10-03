@@ -1,11 +1,9 @@
 require 'pghub/issue_title/version'
-require 'pghub/config'
-require 'pghub/github_api/connection'
 
 module PgHub
   module IssueTitle
     class << self
-      def post_to(issue_path, input)
+      def post(issue_path, input)
         issue_client = GithubAPI.new(issue_path_from(input))
         content = issue_client.get_title
 
