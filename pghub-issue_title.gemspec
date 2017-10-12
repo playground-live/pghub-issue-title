@@ -5,7 +5,7 @@ require "pghub/issue_title/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "pghub-issue_title"
-  spec.version       = PgHub::IssueTitle::VERSION
+  spec.version       = Pghub::IssueTitle::VERSION
   spec.authors       = ["Ebinuma Kenichi"]
   spec.email         = ["ktennis.mqekr12@gmail.com"]
 
