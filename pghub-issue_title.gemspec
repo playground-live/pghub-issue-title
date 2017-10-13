@@ -5,7 +5,7 @@ require "pghub/issue_title/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "pghub-issue_title"
-  spec.version       = PgHub::IssueTitle::VERSION
+  spec.version       = Pghub::IssueTitle::VERSION
   spec.authors       = ["Ebinuma Kenichi"]
   spec.email         = ["ktennis.mqekr12@gmail.com"]
 
@@ -33,4 +33,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.15"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
+
+  # TODO : baseを公開したらコメントイン
+  # sped.add_dependency "pghub-base"
 end

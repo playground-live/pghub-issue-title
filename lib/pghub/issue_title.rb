@@ -2,7 +2,7 @@ require 'pghub/issue_title/version'
 
 class IssueUrlNotFound < StandardError; end
 
-module PgHub
+module Pghub
   module IssueTitle
     class << self
       def post(issue_path, input)
@@ -16,8 +16,8 @@ module PgHub
       private
 
       def issue_path_from(input)
-        reg_organization         = %r{#{PgHub.config.github_organization}\/}
-        ref_issue_url            = %r{ref https:\/\/github.com\/#{PgHub.config.github_organization}\/.+\/\d+}
+        reg_organization         = %r{#{Pghub.config.github_organization}\/}
+        ref_issue_url            = %r{ref https:\/\/github.com\/#{Pghub.config.github_organization}\/.+\/\d+}
         ref_completion_issue_url = %r{ref #(\d+)}
 
         if input.match(ref_issue_url).present?
