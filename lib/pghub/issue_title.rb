@@ -1,5 +1,7 @@
 require 'pghub/issue_title/version'
 
+class IssueUrlNotFound < StandardError; end
+
 module Pghub
   module IssueTitle
     class << self
@@ -27,7 +29,7 @@ module Pghub
           data[data.length - 1] = issue_num
           issue_url = data.join('/')
         else
-          raise 'issue_url is not found.'
+          raise IssueUrlNotFound, 'issue_url is not found.'
         end
 
         issue_url.gsub(/pull/, 'issues')
