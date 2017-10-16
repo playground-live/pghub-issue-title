@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["developers@playground.live"]
 
   spec.summary       = %q{Post issue title to your github}
-  spec.description   = %q{This gem posts issue title when you comment like "ref issue's URL" to your github}
+  spec.description   = %q{This gem posts issue title when you comment including "ref issue's URL" to your github}
   spec.homepage      = "http://tech-blog.playground.live"
   spec.license       = "MIT"
 
