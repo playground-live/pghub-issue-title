@@ -34,6 +34,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
 
-  # TODO : baseを公開したらコメントイン
-  # sped.add_dependency "pghub-base"
+  spec.add_dependency "pghub-base"
 end
