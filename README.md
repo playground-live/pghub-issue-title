@@ -1,6 +1,6 @@
-# Pghub::PostTitle
+# Pghub::IssueTitle
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/pghub/post_title`. To experiment with that code, run `bin/console` for an interactive prompt.
+Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/pghub/issue_title`. To experiment with that code, run `bin/console` for an interactive prompt.
 
 TODO: Delete this and the text above, and describe your gem
 
@@ -9,7 +9,7 @@ TODO: Delete this and the text above, and describe your gem
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'pghub-post_title'
+gem 'pghub-issue_title'
 ```
 
 And then execute:
@@ -18,11 +18,28 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install pghub-post_title
+    $ gem install pghub-issue_title
 
 ## Usage
 
-TODO: Write usage instructions here
+- mount in routes.rb
+
+```ruby
+mount Pghub::Base::Engine => 'some path'
+```
+
+- Get github access token
+- Add following settings to config/initializers/pghub.rb
+
+```ruby
+Pghub.configure do |config|
+  config.github_organization = "Your organization (or user) name"
+  config.github_access_token = "Your Github Access Token"
+end
+```
+
+- Deploy to server
+- Set webhook to your repository
 
 ## Development
 
@@ -40,4 +57,4 @@ The gem is available as open source under the terms of the [MIT License](http://
 
 ## Code of Conduct
 
-Everyone interacting in the Pghub::PostTitle project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/pghub-post_title/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the Pghub::PostTitle project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/pghub-issue-title/blob/master/CODE_OF_CONDUCT.md).

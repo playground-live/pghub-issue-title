@@ -6,12 +6,12 @@ require "pghub/issue_title/version"
 Gem::Specification.new do |spec|
   spec.name          = "pghub-issue_title"
   spec.version       = Pghub::IssueTitle::VERSION
-  spec.authors       = ["Ebinuma Kenichi"]
-  spec.email         = ["ktennis.mqekr12@gmail.com"]
+  spec.authors       = ["ebkn12, akias, Doppon, seteen, mryoshio, sughimura"]
+  spec.email         = ["developers@playground.live"]
 
   spec.summary       = %q{Post issue title to your github}
-  spec.description   = %q{This gem posts issue title when you write "ref issue's URL" to your github conversation}
-  spec.homepage      = "https://github.com/ebkn12"
+  spec.description   = %q{This gem posts issue title when you comment like "ref issue's URL" to your github}
+  spec.homepage      = "http://tech-blog.playground.live"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
