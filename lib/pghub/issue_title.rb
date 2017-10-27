@@ -1,3 +1,4 @@
+require 'pghub/base'
 require 'pghub/issue_title/version'
 
 class IssueUrlNotFound < StandardError; end
