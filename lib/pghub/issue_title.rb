@@ -7,7 +7,7 @@ module Pghub
   module IssueTitle
     class << self
       def post(issue_path, input)
-        issue_client = GithubAPI.new(issue_path_from(input))
+        issue_client = GithubAPI.new(issue_path_from(input, issue_path))
         content = issue_client.get_title
 
         comment_client = GithubAPI.new(issue_path)
@@ -16,7 +16,7 @@ module Pghub
 
       private
 
-      def issue_path_from(input)
+      def issue_path_from(input, issue_path)
         reg_organization         = %r{#{Pghub.config.github_organization}\/}
         ref_issue_url            = %r{ref https:\/\/github.com\/#{Pghub.config.github_organization}\/.+\/\d+}
         ref_completion_issue_url = %r{ref #(\d+)}
