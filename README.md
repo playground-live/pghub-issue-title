@@ -22,13 +22,19 @@ Or install it yourself as:
 
 ## Usage
 
+### Get github access token
+
+### Deploy to heroku
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/playground-live/pghub-server/tree/issue_title)
+
+### Deploy manually
 - mount in routes.rb
 
 ```ruby
 mount Pghub::Base::Engine => 'some path'
 ```
 
-- Get github access token
 - Add following settings to config/initializers/pghub.rb
 
 ```ruby
@@ -39,7 +45,24 @@ end
 ```
 
 - Deploy to server
-- Set webhook to your repository
+
+
+### Set webhook to your repository
+
+|||
+|:-:|:-:|
+|URL|heroku'sURL/github_webhooks|
+|Content-Type|application/json|
+|Secret||
+|event|check the following events|
+
+#### events
+- commit comment
+- issue comment
+- issues
+- pull request
+- pull request comment
+- pull request review comment
 
 ## Development
 
