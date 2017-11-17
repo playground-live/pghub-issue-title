@@ -32,7 +32,7 @@ Or install it yourself as:
 - mount in routes.rb
 
 ```ruby
-mount Pghub::Base::Engine => 'some path'
+mount Pghub::Base::Engine => 'some/path'
 ```
 
 - Add following settings to config/initializers/pghub.rb
@@ -51,7 +51,7 @@ end
 
 |||
 |:-:|:-:|
-|URL|heroku'sURL/github_webhooks|
+|URL|heroku'sURL/github_webhooks or heroku'sURL/some/path|
 |Content-Type|application/json|
 |Secret||
 |event|check the following events|
